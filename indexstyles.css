@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Palanquin', sans-serif;
+}
+
+.application-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: .05fr .1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "toolbar toolbar toolbar"
+        ". main .";
+}
+/* Header */
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+/* Toolbar */
+.toolbar{
+    grid-area: toolbar;
+    display: flex;
+}
+
+.toolkit{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    
+}
+
+.toolkit-title-container{
+    width: 20%;
+    height: 50%;
+    position: relative;
+}
+
+.toolkit-title-container > h1{
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#toolbar1{
+    
+}
+
+#text-controls-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.media-controls-container{
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+
+}
+
+.save-controls-container{
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+}
+
+#fonts-input{
+
+}
+
+#number-input{
+    width: 30px;    
+}
+
+#toolbar2{
+
+}
+
+#toolbar3{
+
+}
+
+/* Main */
+.main{
+    grid-area: main;
+    background-color: gray;
+    margin: 15px;
+}
