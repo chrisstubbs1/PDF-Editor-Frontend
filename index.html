@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="indexstyles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19009d6c71.js" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>PDF Editor</title>
 </head>
 <body>
@@ -28,29 +30,56 @@
                     </select>
                     <input type="number" name="number" id="number-input" value="14">
                 </div>
+                <div class="color-container">
+                    <input type="color" name="color" id="color-picker" value="#fff">
+                </div>
                 <div class="toolkit-title-container">
                     <h1>Text</h1>
                 </div>
             </div>
 
             <div class="toolkit" id="toolbar2">
-                <div class="media-controls-container"></div>
+                <div class="media-controls-container">
+                    <button class="media-icon">
+                        <i class="fas fa-file blueiconcolor" id="file-icon"></i>
+                    </button>
+                    <button class="media-icon">
+                        <i class="fas fa-play" id="play-icon"></i>
+                    </button>
+                    <button class="media-icon">
+                        <i class="fas fa-video" id="video-icon"></i>
+                    </button>
+                </div>
                 <div class="toolkit-title-container">
                     <h1>Media</h1>
                 </div>
             </div>
             
             <div class="toolkit" id="toolbar3">
-                <div class="save-controls-container"></div>
+                <div class="save-controls-container">
+                    <div class="save-button">
+                        <button class="save-icon">
+                            <i class="fas fa-save"></i>             
+                            Save
+                        </button>
+                    </div>
+                </div>
                 <div class="toolkit-title-container">
                     <h1>Save</h1>
                 </div>
             </div>
         </div>
-        <!-- Main Content Section -->
 
-        <div class="main"></div>
+        <!-- Main Content Section -->
+        <div class="main">
+            <iframe src="https://docs.google.com/viewerng/viewer?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" frameborder="1" width="100%" height="100%"></iframe>
+            <!-- <h1 id="youtube-title"><i class="fab fa-youtube"></i>Youtube Playback Function </h1>
+            <input type="text" name="youtube-input" id="youtube-search-bar" placeholder="Enter a youtube">
+            <div class="video-container">
+                <iframe width="860" height="615" src="https://www.youtube.com/embed/Oa9QeMHNOm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+        </div>
     </div>
+    <script src="./scripts/youtube.js"></script>
 </body>
 </html>
-
